@@ -79,14 +79,18 @@ def monitor_cpu(cpu_limit):
 
 
 def main():
-
-    parser = argparse.ArgumentParser(description="Monitor CPU usage and alert if it exceeds a specified threshold.")
-
-    parser.add_argument("--cpu_limit", type=float, default=80.0, help="Set the CPU usage threshold in percentage")
-
+    """function to parse arguments and monitor CPU usage."""
+    parser = argparse.ArgumentParser(description="Monitor CPU usage and alert if it exceeds provided threshold.")
+    parser.add_argument("--cpu_limit", type=float, default=75.0, help="Set the CPU usage threshold in percentage")
     args = parser.parse_args()
 
-    monitor_cpu(cpu_limit=args.cpu_limit)
+    # current CPU usage
+    current_usage = get_cpu_usage()
+    print(f"The Current CPU Usage: {current_usage:.2f}%")
+
+    #To check usage exceeds the limit
+    if current_usage >= args.cpu_limit:
+        print(f"Warning: The Usage Has Exeedeed {args.cpu_limit}%!!!!!!!")
 
 
 if __name__ == "__main__":
