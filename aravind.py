@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#Author: Aravind Kumar
+#Author: Aravind Ravi Kumar
 
 import time
 
