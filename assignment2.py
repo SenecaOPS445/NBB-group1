@@ -6,9 +6,9 @@ import select  # For monitoring input
 
 
 def get_cpu_usage():
-    #Calculate CPU usage percentage from /proc/stat
+    """Calculate CPU usage percentage from /proc/stat."""
     with open('/proc/stat', 'r') as file:
-        cpu_times = list(map(int, file.readline().strip().split()[1:]))
+        cpu_times = list(map(int, file.readline().strip().split()[1:])) #the value is converted into integer and stored in the cpu_times
     
     idle_time = cpu_times[3]
     total_time = sum(cpu_times)
