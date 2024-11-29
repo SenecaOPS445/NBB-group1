@@ -7,9 +7,9 @@ import select
 
 def notify_user(message):
 
-    """
-    Send a desktop notification using the `notify-send` command.
-    """
+    
+    #Send a desktop notification
+    
 
     os.system(f'notify-send "CPU Usage Alert" "{message}"')
 
