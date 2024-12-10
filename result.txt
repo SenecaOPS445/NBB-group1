@@ -1,0 +1,25 @@
+
+--------------------------------------------------
+group1
+--------------------------------------------------
+Python Version: 3.12.7 (main, Oct  1 2024, 11:15:50) [GCC 14.2.1 20240910]
+Ran on 2024-12-02 12:41:33.310935
+Git commit used: commit 30d19e5a3741117194b75b5b70f32d615bc986d4
+Merge: fd2458c e423924
+Author: 118188200-myseneca <144229535+Aravind5790@users.noreply.github.com>
+Date:   Fri Nov 29 02:08:34 2024 -0500
+
+    Merge pull request #15 from SenecaOPS445/vperera
+    
+    Update vimodh.py
+
+
+--------------------------------------------------
+Relevant, useful, shows ambition           3.0/  3
+Comments and Documentation                 2.0/  5
+Adequate commits with good messages        3.0/  5
+No redundant code, variable names          2.0/  2
+
+--------------------------------------------------
+Total: 10.0/15
+FEEDBACK:
